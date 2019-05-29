@@ -2,7 +2,7 @@
 
 > Crystal Sun, Liying Li, Zhi Li, Joy Qi
 >
-> Report: https://docs.google.com/document/d/15hPVEMnU04mBg2uyZOfCO0Y98mXdxdXSkxpKCCl2k1o/edit?usp=sharing
+> [Report](https://docs.google.com/document/d/15hPVEMnU04mBg2uyZOfCO0Y98mXdxdXSkxpKCCl2k1o/edit?usp=sharing)
 
 ## Table of Content
 
@@ -12,9 +12,21 @@
 
 ## Project Goal
 
-The goal of this report is to precisely and accurately forecast monthly bankruptcy rates for Canada.
+The goal of this report is to precisely and accurately forecast monthly bankruptcy rates for Canada from January 2015 to December 2017.
 
 ## Modeling
+
+### Univariate
+
+Box-Jenkins Approach
+
+Holt-Winter Approach
+
+### Multivariate
+
+Box-Jenkins Approach
+
+Vector Autoregressive Model
 
 
 
@@ -25,7 +37,7 @@ The goal of this report is to precisely and accurately forecast monthly bankrupt
 |               Holt-Winters (ɑ=0.6,β=0.2,γ=0.2)               |   0.2817   |                |           |
 | SARIMAX (1,1,2)⨉(3,1,3)12<br />**Exogenous:**<br />Housing Price Index<br />Population<br />Unemployment Rate | **0.1896** |    376.2786    | -726.5573 |
 | VAR(p=2)<br />**Endogenous:**<br />Housing Price Index<br />Population<br />Unemployment Rate |   0.2657   |                |           |
-| VARX(p=2)<br />**Endogenous:**<br />Housing Price Index<br />UNemployment Rate<br />**Exogenous:**<br />Population |   0.2573   |  
+| VARX(p=2)<br />**Endogenous:**<br />Housing Price Index<br />UNemployment Rate<br />**Exogenous:**<br />Population |   0.2573   |
 
 ## Forecasting
 
